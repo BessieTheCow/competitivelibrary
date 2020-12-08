@@ -23,6 +23,8 @@ using namespace std;
 //https://github.com/bqi343/USACO/blob/master/Implementations/content/numerical/Polynomials/FFT.h
 //https://github.com/kth-competitive-programming/kactl/blob/master/content/numerical/FastFourierTransform.h
 
+//Computes all roots at compile time because I can
+
 constexpr int modk = 23; //998244353
 constexpr int modc = 119;
 constexpr int mod = (modc << modk) + 1; //2^k * c + 1
