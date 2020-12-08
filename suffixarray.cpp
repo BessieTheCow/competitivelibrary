@@ -53,7 +53,7 @@ void countingsort(int k, int mr)
 
 void constructsa()
 {
-	n = s.size();
+	n = static_cast<int>(s.size());
 	for (int i = 0; i < n; i++) //initial rank = encoding value
 	{
 		ra[i] = static_cast<unsigned char>(s[i]);
