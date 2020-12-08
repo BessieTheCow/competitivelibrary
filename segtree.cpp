@@ -35,8 +35,8 @@ void build(int* arr, int node = 1, int nodel = 0, int noder = n - 1)
 	else
 	{
 		int mid = (nodel + noder) / 2;
-		build(2 * node, nodel, mid);
-		build(2 * node + 1, mid + 1, noder);
+		build(arr, 2 * node, nodel, mid);
+		build(arr, 2 * node + 1, mid + 1, noder);
 		updatenode(node);
 	}
 }
@@ -57,7 +57,6 @@ void update(int index, int val, int node = 1, int nodel = 0, int noder = n - 1)
 	lazyprop(node, nodel, noder);
 	if (nodel == noder)
 	{
-		arr[index] += val;
 		tree[node] += val;
 	}
 	else
