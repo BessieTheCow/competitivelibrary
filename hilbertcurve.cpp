@@ -4,6 +4,8 @@ using namespace std;
 //Hilbert curve for use as an alternative sorting order
 //in Mo's algorithm
 
+//Complexity: n * sqrt(q)
+
 //Based on https://codeforces.com/blog/entry/61203
 //and https://en.wikipedia.org/wiki/Hilbert_curve#Applications_and_mapping_algorithms
 //(I posted this comment: https://codeforces.com/blog/entry/61203?#comment-522213)
